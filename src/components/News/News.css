@@ -1,0 +1,116 @@
+.news {
+  margin-top: 100px;
+}
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.news-cards {
+  margin-left: 100px;
+  margin-right: 70px;
+  display: flex;
+  gap: 40px;
+}
+.news-card {
+  width: 30%;
+  border: 1px solid #ddd;
+}
+.news-card img {
+  width: 100%;
+}
+.news-date {
+  /* border-top: 1px solid #ddd; */
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  /* background-color: #ddd; */
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.news-date-left,
+.news-date-right {
+  display: flex;
+  gap: 10px;
+}
+.news-date-left {
+  margin-left: 20px;
+  /* background-color: red; */
+  border-right: 1px solid #777;
+  padding-right: 15px;
+}
+.caclendar-icon,
+.chat-icon {
+  color: #076cec;
+}
+.news-date p {
+  font-size: 15px;
+}
+.news-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.news-text h2 {
+  font-size: 22px;
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.news-text h2:hover {
+  color: #076cec;
+}
+.news-text p {
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.news-text .news-button {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #076cec;
+  border: 1px solid #076cec;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.5s;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 7px;
+}
+.news-text .news-button:hover {
+  background-color: #8ed1fc;
+  border: 1px solid #8ed1fc;
+}
+.news-text span {
+  margin-left: 5px;
+}
+
+/* start res */
+@media (max-width: 991px) {
+  .news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .news-card {
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .news-card {
+    margin-left: 50px;
+    width: 70%;
+  }
+}
+/* end res */

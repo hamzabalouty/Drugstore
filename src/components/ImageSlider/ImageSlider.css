@@ -1,0 +1,25 @@
+.image-slider-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.slider-carousel {
+  display: flex;
+  gap: 30px;
+}
+.last-image-slider {
+  border: 1px solid #ddd;
+}
+.image-slider-bottom {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.slider-carousel {
+  cursor: pointer;
+}
+.image-slider {
+  position: relative;
+}
+.image-slider .cYcnau,
+.image-slider .DkxSo {
+  opacity: 0;
+}
