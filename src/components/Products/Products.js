@@ -12,6 +12,12 @@ const Products = () => {
   const dispatch = useDispatch();
 
   const [itemsData, setItemsData] = useState(productsData);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(9);
+
+  const lastPostIndex = currentPage * postsPerPage;
+  const firstPostIndex = lastPostIndex - postsPerPage;
+  const currentPosts = itemsData.slice(firstPostIndex, lastPostIndex);
 
   //get all cat uniqe
   const allCategory = [...new Set(productsData.map((i) => i.category))];
@@ -52,7 +58,7 @@ const Products = () => {
         </div>
         <div className="products-row">
           <div className="products-row-container">
-            {itemsData.map((item) => (
+            {currentPosts.map((item) => (
               <div className="products-box">
                 <div className="products-box-image">
                   <Link to={`product/${item.id}`}>
