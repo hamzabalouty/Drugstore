@@ -233,6 +233,11 @@
     color: black;
   }
 }
+@media screen and (max-width: 890px){
+  .header-contact p{
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .header-contact {
     margin-left: 50px;
@@ -296,31 +301,20 @@
     margin-right: 50px;
   }
 }
-@media (max-width: 530px) {
+@media screen and (max-width: 530px) {
   .header-top {
     display: flex;
     gap: 40px;
   }
-  .header-contact-det-r {
-    margin-left: -50px;
-  }
-  .header-bottom-container img {
-    margin-left: -70px;
-  }
-  .nav-btn {
-    margin-left: -50px;
-  }
-  .favorite-icon,
-  .person-icon,
-  .shopping-icon {
-    margin-left: -80px;
+  .header-bottom{
+    width: 100%;
   }
   .shopping-icon {
     position: relative;
   }
   .shopping-cart-number {
     position: absolute;
-    left: -10px;
+    /* left: -10px; */
   }
 }
 @media (max-width: 480px) {
@@ -332,6 +326,12 @@
   }
   .header-bottom-icons {
     margin-left: 80px;
+  }
+  .header-bottom{
+    width: 100%;
+  }
+  .header-bottom-icons{
+    margin-left: -10px;
   }
 }
 @media (max-width: 375px) {
