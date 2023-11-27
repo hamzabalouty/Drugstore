@@ -104,4 +104,9 @@
     margin-top: -140px;
   }
 }
+@media screen and (max-width: 660px) {
+  .home-image-content {
+    display: none;
+  }
+}
 /* end res */
