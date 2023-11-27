@@ -67,24 +67,17 @@
 }
 
 /* start res */
-@media (max-width: 991px) {
-  .slider-container {
-    margin-left: 25%;
-    width: 60%;
-  }
-}
-@media (max-width: 767px) {
-  .slider {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+@media screen and (max-width: 991px) {
+  .slider{
+    height: fit-content !important;
+    padding-bottom: 25px;
   }
   .slider-container {
-    margin-left: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     width: 60%;
-    margin-top: -20px;
-    padding-bottom: 10px;
-    height: 450px;
+    padding-bottom: 5px;
+    height: fit-content !important;
   }
 }
 /* end res */
