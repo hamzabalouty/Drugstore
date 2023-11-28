@@ -87,6 +87,7 @@
 .blog-body-right {
   width: 70%;
   margin-bottom: 100px;
+  margin-top: 70px;
 }
 .blog-right-container {
   display: flex;
@@ -131,13 +132,8 @@
   .blog-left-list {
     overflow: hidden;
   }
-  .blog-left-row {
-    /* background-color: blue; */
-  }
   .left-row-l {
     margin-top: -10px;
-    /* display: flex; */
-    /* align-items: center; */
   }
   .left-row-l div,
   .left-row-l p {
