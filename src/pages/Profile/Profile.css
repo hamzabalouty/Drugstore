@@ -65,3 +65,15 @@
   background-color: #8ed1fc;
   border: 1px solid #8ed1fc;
 }
+
+/* START RWD */
+@media screen and (max-width: 768px){
+  .profile-box,
+  .profile-body{
+    width: 90%;
+  }
+  .profile-body{
+    margin-left: 10%;
+  }
+}
+/* END RWD */
