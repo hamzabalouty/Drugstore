@@ -171,7 +171,7 @@
 }
 
 /* start res */
-@media (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .shop-text button {
     text-align: center;
   }
@@ -186,10 +186,7 @@
     flex-wrap: wrap;
   }
   .shop-body-right {
-    width: 900px;
-  }
-  .shop-right-box {
-    width: 45%;
+    width: 100%;
   }
   .shop-body-left,
   .blog-left-btns {
@@ -200,28 +197,86 @@
   .row-left-lee {
     width: 1000px;
   }
+  .shop-right-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6%;
+    margin-left: 0px;
+  }
+  .shop-right-box{
+    width: 47%;
+  }
 }
-@media (max-width: 767px) {
+@media screen and (min-width: 451px) and (max-width: 767px) {
   .shop-body {
     display: flex;
     flex-direction: column-reverse;
     max-width: 100%;
     flex-wrap: wrap;
   }
-  .shop-body-right {
-    width: 700px;
-  }
-  .shop-right-box {
-    width: 45%;
-  }
   .shop-body-left,
-  .blog-left-btns {
-    /* width: 500px; */
+  .blog-left-head,
+  .blog-left-btns,
+  .blog-row,
+  .row-left-le,
+  .shop-body-right{
+    width: 100%;
+  }
+  .shop-right-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6%;
+    margin-left: 0px;
+  }
+  .shop-right-box{
+    width: 47%;
   }
   .blog-left-head,
   .row-left-le,
   .row-left-lee {
-    width: 700px;
+    width: 100%;
+  }
+  .shop-body-right button{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .shop-body {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .shop-body-right{
+    width: 100%;
+  }
+  .shop-right-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+  }
+  .shop-right-box{
+    width: 100%;
+  }
+  .blog-left-head,
+  .row-left-le,
+  .row-left-lee {
+    width: 100%;
+  }
+  .shop-body-left,
+  .blog-left-head,
+  .blog-left-btns,
+  .blog-row,
+  .row-left-le,
+  .shop-body-right{
+    width: 100%;
+  }
+  .shop-body-right button{
+    display: none;
   }
 }
 /* end res */
