@@ -1,0 +1,23 @@
+/* START RWD */
+@media screen and (max-width: 767px){
+    .readpage-form-top,
+    .readpage-gap{
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+    .readpage-progress{
+        display: none;
+    }
+    .readpage-body{
+        width: 70%;
+        margin-left: 20px;
+    }
+    .readpage-imgs{
+        margin-left: 0px;
+    }
+    .readpage-imgs img{
+        width: 50%;
+    }
+}
+/* END RWD */
