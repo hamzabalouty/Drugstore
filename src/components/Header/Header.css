@@ -154,17 +154,15 @@
   .header-contact .email-icon {
     font-size: 18px;
   }
-  .header-social {
-  }
   .header-bottom {
     position: relative;
     width: 100%;
   }
   .toggle-modal {
     position: fixed;
-    right: 0;
+    left: 0;
     top: 0;
-    width: 250px;
+    width: 25%;
     height: 100%;
     background-color: #fff;
   }
@@ -184,10 +182,8 @@
     display: flex;
     align-items: center !important;
     justify-content: center;
-    /* background-color: red; */
     max-width: 100% !important;
     position: relative;
-    /* padding-left: 200px;*/
     padding-right: 10px;
   }
   .header-bottom-container img {
@@ -203,7 +199,6 @@
     opacity: 1;
     left: 50%;
     padding-top: 15px;
-    /* padding-right: 70px; */
   }
   .header-bottom-icons {
     margin-top: 15px;
@@ -238,7 +233,15 @@
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .toggle-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+  }
   .header-contact {
     margin-left: 50px;
   }
@@ -291,6 +294,14 @@
   .header-bottom-icons {
     margin-right: 250px;
   }
+  .toggle-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+  }
   .favorite-icon,
   .person-icon,
   .shopping-icon {
@@ -314,12 +325,27 @@
   }
   .shopping-cart-number {
     position: absolute;
-    /* left: -10px; */
+  }
+  .toggle-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
   }
 }
 @media (max-width: 480px) {
   .nav-btn {
     margin-left: -15px;
+  }
+  .toggle-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
   }
   .toggle-modal {
     width: 150px;
