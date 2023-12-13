@@ -1,3 +1,6 @@
+.home-image {
+  max-width: 100%;
+}
 .home-image-container {
   max-width: 100%;
   position: relative;
@@ -51,6 +54,12 @@
 
 /* start res */
 @media (max-width: 991px) {
+  .home-image {
+    max-width: 100%;
+  }
+  .home-image-container {
+    max-width: 100%;
+  }
   .home-image-content {
     margin-left: 0px;
     margin-bottom: 15px;
@@ -69,24 +78,48 @@
   }
 }
 @media (max-width: 936px) {
+  .home-image {
+    max-width: 100%;
+  }
+  .home-image-container {
+    max-width: 100%;
+  }
   .home-image-content {
     margin-left: 0px;
     margin-top: -20px;
   }
 }
 @media (max-width: 900px) {
+  .home-image {
+    max-width: 100%;
+  }
+  .home-image-container {
+    max-width: 100%;
+  }
   .home-image-content {
     margin-left: 0px;
     margin-top: -40px;
   }
 }
 @media (max-width: 860px) {
+  .home-image {
+    max-width: 100%;
+  }
+  .home-image-container {
+    max-width: 100%;
+  }
   .home-image-content {
     margin-left: 0px;
     margin-top: -70px;
   }
 }
 @media (max-width: 800px) {
+  .home-image {
+    max-width: 100%;
+  }
+  .home-image-container {
+    max-width: 100%;
+  }
   .home-image-content {
     margin-left: 0px;
     margin-top: -90px;
@@ -99,12 +132,24 @@
   }
 }
 @media (max-width: 735px) {
+  .home-image {
+    max-width: 100%;
+  }
+  .home-image-container {
+    max-width: 100%;
+  }
   .home-image-content {
     margin-left: 0px;
     margin-top: -140px;
   }
 }
 @media screen and (max-width: 660px) {
+  .home-image {
+    max-width: 100%;
+  }
+  .home-image-container {
+    max-width: 100%;
+  }
   .home-image-content {
     display: none;
   }
