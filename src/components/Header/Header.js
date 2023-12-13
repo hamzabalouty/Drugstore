@@ -3,7 +3,7 @@ import "./Header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Modal from "react-modal";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import EmailIcon from "@mui/icons-material/Email";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
@@ -54,34 +54,34 @@ const Header = () => {
             <nav ref={navRef} className="header-bottom-nav">
               <ul>
                 <li>
-                  <Link to="/" className="header-link">
+                  <NavLink to="/" className="header-link">
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/about" className="header-link">
+                  <NavLink to="/about" className="header-link">
                     About
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/blog" className="header-link">
+                  <NavLink to="/blog" className="header-link">
                     Blog
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/collection" className="header-link">
+                  <NavLink to="/collection" className="header-link">
                     Collection
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/shop" className="header-link">
+                  <NavLink to="/shop" className="header-link">
                     Shop
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/contact" className="header-link">
+                  <NavLink to="/contact" className="header-link">
                     Contact Us
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </nav>
@@ -131,6 +131,21 @@ const Header = () => {
                   <li>
                     <Link to="/contact" className="modal-link">
                       Contact Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/profile" className="modal-link">
+                      Profile
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/wishlist" className="modal-link">
+                      Wishlist
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/cart" className="modal-link">
+                      Cart
                     </Link>
                   </li>
                 </ul>
