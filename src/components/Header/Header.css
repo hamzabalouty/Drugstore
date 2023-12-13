@@ -1,12 +1,15 @@
 /* start top */
 .header {
   height: 150px;
+  max-width: 100%;
 }
 .header-container {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
 .header-top {
+  max-width: 100%;
   background-color: #076cec;
   height: 60px;
   display: flex;
@@ -24,7 +27,6 @@
   display: flex;
   align-items: center !important;
   gap: 15px;
-  /* background-color: red; */
 }
 .header-contact-det p,
 .header-contact-det-r p {
@@ -59,13 +61,17 @@
 .header-bottom {
   height: 90px;
   background-color: #f6f6f6;
+  max-width: 100%;
 }
 .header-bottom-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.header-bottom-container .active {
+  color: #076cec;
 }
 .header-bottom-container img {
   margin-top: 20px;
@@ -90,7 +96,7 @@
 }
 .header-bottom-icons {
   display: flex;
-  gap: 30px;
+  gap: 15px;
   position: relative;
 }
 .favorite-icon,
@@ -121,8 +127,6 @@
   padding-top: 0px;
   font-size: 15px;
 }
-.cart-number-box {
-}
 /* end bottom */
 
 .header-link {
@@ -147,6 +151,16 @@
   .header {
     max-width: 100%;
   }
+  .header-container {
+    max-width: 100%;
+  }
+  .header-top {
+    width: 100%;
+  }
+  .header-bottom {
+    position: relative;
+    width: 100%;
+  }
   .header-contact p {
     font-size: 15px;
   }
@@ -154,58 +168,36 @@
   .header-contact .email-icon {
     font-size: 18px;
   }
-  .header-bottom {
-    position: relative;
-    width: 100%;
-  }
+
   .toggle-modal {
     position: fixed;
     left: 0;
     top: 0;
-    width: 25%;
+    width: 30%;
     height: 100%;
     background-color: #fff;
   }
   .nav-btn {
-    padding: 5px;
     cursor: pointer;
     background: transparent;
     border: none;
     outline: none;
     color: #000;
-    visibility: hidden;
-    opacity: 0;
     font-size: 1.8rem;
-    margin-left: -30px;
+    margin-top: 10px;
   }
   .header-bottom-container {
     display: flex;
     align-items: center !important;
     justify-content: center;
     max-width: 100% !important;
-    position: relative;
-    padding-right: 10px;
+    gap: 35%;
   }
   .header-bottom-container img {
     width: 120px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
   }
-
-  .nav-btn {
-    position: absolute;
-    visibility: visible;
-    opacity: 1;
-    left: 50%;
-    padding-top: 15px;
-  }
-  .header-bottom-icons {
-    margin-top: 15px;
-  }
-
   .header-bottom-nav {
-    opacity: 0;
+    display: none;
   }
   .close-modal {
     margin: 20px;
@@ -228,12 +220,24 @@
     color: black;
   }
 }
-@media screen and (max-width: 890px){
-  .header-contact p{
+@media screen and (max-width: 890px) {
+  .header-contact p {
     display: none;
   }
 }
 @media screen and (max-width: 767px) {
+  .header {
+    max-width: 100%;
+  }
+  .header-container {
+    max-width: 100%;
+  }
+  .header-top {
+    max-width: 100%;
+  }
+  .header-bottom {
+    max-width: 100%;
+  }
   .toggle-modal {
     position: fixed;
     left: 0;
@@ -247,9 +251,6 @@
   }
   .header-social {
     margin-right: 50px;
-  }
-  .header-bottom-container img {
-    margin-left: -80px;
   }
   .header-top {
     display: flex;
@@ -268,13 +269,6 @@
   .header-bottom-container img {
     width: 100px;
   }
-  .nav-btn {
-    margin-bottom: 25px;
-    margin-left: -30px;
-  }
-  .header-bottom-icons {
-    margin-bottom: 27px;
-  }
   .toggle-modal {
     position: fixed;
     right: 0;
@@ -285,15 +279,24 @@
   }
 }
 @media (max-width: 740px) {
+  .header {
+    max-width: 100%;
+  }
+  .header-container {
+    max-width: 100%;
+  }
+  .header-top {
+    max-width: 100%;
+  }
+  .header-bottom {
+    max-width: 100%;
+  }
   .header-contact p {
     display: none;
   }
   .header-bottom-container {
     display: flex;
   }
-  .header-bottom-icons {
-    margin-right: 250px;
-  }
   .toggle-modal {
     position: fixed;
     left: 0;
@@ -309,79 +312,102 @@
   }
   .nav-btn {
     font-size: 20px;
-    margin-right: 50px;
   }
 }
 @media screen and (max-width: 530px) {
+  .header {
+    max-width: 100%;
+  }
+  .header-container {
+    max-width: 100%;
+  }
   .header-top {
+    max-width: 100%;
     display: flex;
     gap: 40px;
   }
-  .header-bottom{
-    width: 100%;
+  .header-bottom {
+    max-width: 100%;
   }
   .shopping-icon {
     position: relative;
   }
-  .shopping-cart-number {
-    position: absolute;
-  }
   .toggle-modal {
     position: fixed;
     left: 0;
     top: 0;
-    width: 25%;
+    width: 30%;
     height: 100%;
     background-color: #fff;
+  }
+  .header-bottom-container img {
+    margin-left: -15px;
+  }
+  .header-bottom-icons {
+    display: flex;
+    margin-right: -15px;
   }
 }
 @media (max-width: 480px) {
-  .nav-btn {
-    margin-left: -15px;
+  .header {
+    max-width: 100%;
+  }
+  .header-container {
+    max-width: 100%;
+  }
+  .header-top {
+    max-width: 100%;
+  }
+  .header-bottom {
+    max-width: 100%;
   }
   .toggle-modal {
     position: fixed;
     left: 0;
     top: 0;
-    width: 25%;
+    width: 30%;
     height: 100%;
     background-color: #fff;
   }
-  .toggle-modal {
-    width: 150px;
+  .header-bottom-container img {
+    margin-left: -25px;
+    margin-right: 20px;
   }
   .header-bottom-icons {
-    margin-left: 80px;
+    display: flex;
+    margin-right: -25px;
   }
-  .header-bottom{
-    width: 100%;
+}
+@media screen and (max-width: 376px) and (max-width: 420px) {
+  .header-bottom-container img {
+    margin-left: 0px;
   }
-  .header-bottom-icons{
-    margin-left: -10px;
+  .nav-btn {
+    margin-left: 30px;
+  }
+  .header-bottom-icons {
+    display: flex;
+    margin-left: 30px;
   }
 }
 @media (max-width: 375px) {
+  .header {
+    max-width: 100%;
+  }
+  .header-container {
+    max-width: 100%;
+  }
+  .header-top {
+    max-width: 100%;
+  }
+  .header-bottom {
+    max-width: 100%;
+  }
   .header-contact-det-r {
     margin-left: -100px;
   }
   .header-bottom-container img {
-    margin-left: -100px;
     width: 90px;
-  }
-  .nav-btn {
-    margin-left: -15px;
-  }
-  .favorite-icon,
-  .person-icon,
-  .shopping-icon {
-    margin-left: -10px;
-  }
-  .shopping-icon {
-    position: relative;
-  }
-  .shopping-cart-number {
-    position: absolute;
-    left: 80px;
   }
 }
 
