@@ -4,6 +4,7 @@
   margin-top: 30px;
 }
 .footer-container {
+  max-width: 100%;
   display: flex;
   gap: 120px;
   margin-left: 150px;
@@ -62,10 +63,13 @@
 
 /* start res */
 @media (max-width: 991px) {
+  .footer {
+    max-width: 100%;
+  }
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
   }
   .footer-col {
     width: 30%;
@@ -75,10 +79,13 @@
   }
 }
 @media (max-width: 767px) {
+  .footer {
+    max-width: 100%;
+  }
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
     margin-left: 100px;
   }
   .footer-col {
