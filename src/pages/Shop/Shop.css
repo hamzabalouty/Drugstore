@@ -21,9 +21,6 @@
 .shop-body-right {
   width: 75%;
 }
-.shop-body-left .blog-left-head {
-  /* margin-bottom: 25px; */
-}
 .blog-row .row-left-le {
   display: flex;
   align-items: center;
@@ -37,8 +34,6 @@
   align-items: center;
   gap: 15px;
   border-bottom: 1px dashed #ddd;
-  /* padding-bottom: 10px; */
-  /* padding-top: 10px; */
 }
 .row-left-le div,
 .row-left-lee div {
@@ -188,24 +183,27 @@
   .shop-body-right {
     width: 100%;
   }
-  .shop-body-left,
-  .blog-left-btns {
-    max-width: 100%;
+  .shop-body-left {
+    width: 100%;
   }
   .blog-left-head,
   .row-left-le,
   .row-left-lee {
-    width: 1000px;
+    width: 100%;
   }
-  .shop-right-container{
+  .shop-right-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 6%;
     margin-left: 0px;
   }
-  .shop-right-box{
+  .shop-right-box {
     width: 47%;
+  }
+  .list-box,
+  .shop-right-box {
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 767px) {
@@ -220,17 +218,17 @@
   .blog-left-btns,
   .blog-row,
   .row-left-le,
-  .shop-body-right{
+  .shop-body-right {
     width: 100%;
   }
-  .shop-right-container{
+  .shop-right-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 6%;
     margin-left: 0px;
   }
-  .shop-right-box{
+  .shop-right-box {
     width: 47%;
   }
   .blog-left-head,
@@ -238,28 +236,28 @@
   .row-left-lee {
     width: 100%;
   }
-  .shop-body-right button{
+  .shop-body-right button {
     display: none;
   }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .shop-body {
     display: flex;
     flex-direction: column-reverse;
     max-width: 100%;
     flex-wrap: wrap;
   }
-  .shop-body-right{
+  .shop-body-right {
     width: 100%;
   }
-  .shop-right-container{
+  .shop-right-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-left: 0px;
   }
-  .shop-right-box{
+  .shop-right-box {
     width: 100%;
   }
   .blog-left-head,
@@ -272,10 +270,10 @@
   .blog-left-btns,
   .blog-row,
   .row-left-le,
-  .shop-body-right{
+  .shop-body-right {
     width: 100%;
   }
-  .shop-body-right button{
+  .shop-body-right button {
     display: none;
   }
 }
