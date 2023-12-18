@@ -9,9 +9,10 @@
 .readpage-body {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   gap: 30px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .readpage-body img {
   height: 500px;
@@ -33,11 +34,11 @@
 }
 .readpage-gap {
   display: flex;
-  gap: 40px;
+  gap: 10%;
 }
 .readpage-gap-left,
 .readpage-gap-right {
-  width: 50%;
+  width: 45%;
 }
 .readpage-gap-left h2,
 .readpage-gap-right h2 {
@@ -130,7 +131,7 @@
 }
 .readpage-form-top {
   display: flex;
-  gap: 30px;
+  gap: 10%;
   height: 40px;
 }
 .readpage-form-top input {
@@ -138,20 +139,41 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
-  width: 50%;
+  width: 45%;
 }
 
 /* start res */
 @media (max-width: 991px) {
+  .readpage,
+  .readpage-container,
+  .readpage-body {
+    max-width: 100%;
+  }
+  .readpage-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 7%;
+  }
+  .readpage-imgs img {
+    width: 45%;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .readpage,
+  .readpage-container,
+  .readpage-body {
+    max-width: 100%;
+  }
   .readpage-imgs {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
   }
   .readpage-imgs img {
-    width: 45%;
+    width: 100%;
+    margin-top: 25px;
   }
-}
-@media (max-width: 767px) {
 }
 /* end res */
