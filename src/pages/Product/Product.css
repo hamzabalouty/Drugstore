@@ -2,15 +2,17 @@
   max-width: 100%;
 }
 .product-container {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 70px;
 }
 .product-body {
-  margin-left: 50px;
-  margin-right: 50px;
   display: flex;
-  gap: 40px;
+  gap: 5%;
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .product-container-left {
   width: 25%;
@@ -22,12 +24,13 @@
   margin-bottom: 100px;
 }
 .product-container-right {
-  width: 75%;
+  width: 70%;
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 .product-container-right img {
-  width: 50%;
+  width: 100%;
   height: 450px;
 }
 .product-right-content {
@@ -72,21 +75,33 @@
 
 /* start res */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .product,
+  .product-container,
   .product-body {
+    max-width: 100%;
+  }
+  .product-body {
+    max-width: 100%;
     display: flex;
     flex-direction: column-reverse;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .product-container-right {
     width: 100%;
+    display: flex;
+    gap: 7%;
   }
   .product-container-right img {
-    width: 50%;
+    width: 45%;
   }
   .product-right-content {
-    width: 50%;
+    width: 45%;
   }
   .product-container-left {
     max-width: 100%;
+    margin-top: 30px;
+    width: 100%;
   }
   .blog-left-list,
   .left-row-l,
@@ -95,21 +110,28 @@
   }
 }
 @media screen and (min-width: 401px) and (max-width: 767px) {
+  .product,
+  .product-container,
+  .product-body {
+    max-width: 100%;
+  }
   .product-container-right {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .product-body {
     display: flex;
     width: 100%;
     flex-direction: column-reverse;
+    gap: 40px;
   }
   .product-container-right img {
     width: 100%;
     height: 100vh;
   }
   .product-container-left {
-    max-width: 100%;
+    width: 100%;
   }
   .shop-body-left,
   .blog-left-list,
@@ -118,27 +140,31 @@
   .blog-left-head,
   .blog-left-head h2 {
     width: 100%;
-  }
-  .product-container-left {
-    width: 70%;
   }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
+  .product,
+  .product-container,
+  .product-body {
+    max-width: 100%;
+  }
   .product-container-right {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .product-body {
     display: flex;
     width: 100%;
     flex-direction: column-reverse;
+    gap: 40px;
   }
   .product-container-right img {
     width: 100%;
     height: 100vh;
   }
   .product-container-left {
-    max-width: 100%;
+    width: 100%;
   }
   .shop-body-left,
   .blog-left-list,
@@ -149,7 +175,7 @@
     width: 100%;
   }
   .product-container-left {
-    width: 70%;
+    width: 100%;
   }
 }
 /* end res */
